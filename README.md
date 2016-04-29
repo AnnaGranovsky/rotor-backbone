@@ -1,6 +1,12 @@
 Library for node.js server Backbone
+## Install
+To install run
+```sh
+npm install rotor-backbone 
+```
 
 ## Usage
+You can take a look at <a href="https://github.com/AnnaGranovsky/backbonejs-client-server">simple example</a>.
 
 ## Controllers
 ```js
