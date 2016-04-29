@@ -2,7 +2,7 @@ Library for node.js server Backbone
 
 ## Usage
 
-Controllers
+## Controllers
 ```js
 var Rotor = require('rotor-backbone');
 
