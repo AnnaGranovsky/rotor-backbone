@@ -64,11 +64,21 @@ _.extend(Controller.prototype, {
 
                 this.collection.initialize(function (result) {
                     this.collection[this.method](reqBody, action, this.sendResponse, this);
+                    this.collection.on('destroy change', function (model) {
+                        if (global.mediator) {
+                            global.mediator.publish('Update socket', {collection: req.url});
+                        }
+                    });
                 }, this);
             }.bind(this));
         } else {
             this.collection.initialize(function (result) {
                 this.collection[this.method](action, this.sendResponse, this);
+                this.collection.on('destroy change', function (model) {
+                    if (global.mediator) {
+                        global.mediator.publish('Update socket', {collection: req.url});
+                    }
+                });
             }, this);
         }
         
