@@ -1,6 +1,6 @@
 {
   "name": "rotor-backbone",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "server Backbone library",
   "main": "rotor.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "mongodb": "^2.1.18",
     "underscore": "^1.8.3"
   },
-  "readme": "README.md",
+  "readme": "",
   "_id": "rotor-backbone@1.0.0",
   "_shasum": "9dcb799c31aa25658be22612632b9c1940cbf4c4",
   "_from": "rotor-backbone@latest"
