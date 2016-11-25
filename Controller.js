@@ -40,8 +40,8 @@ _.extend(Controller.prototype, {
         'DELETE': 'deleteItem'
     },
     responseHead: {
-        statusOK: '',
-        statusErr: '',
+        statusOK: '200',
+        statusErr: '404',
         cookies: ''
     },
     response: '',
